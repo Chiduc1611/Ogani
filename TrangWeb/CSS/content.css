@@ -1,0 +1,123 @@
+.post-content {
+    display: flex;
+    margin-left: 150px;
+    margin-top: 70px;
+}
+
+.post-content-imagefile>img {
+    margin: 6px;
+}
+
+.text-content {
+    padding-left: 30px;
+
+}
+
+.text-content>h3 {
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+.text-evaluate {
+    margin-left: 30px;
+}
+
+.text-evaluate>.fa {
+    color: #EDBB0E;
+    margin-top: 15px;
+    margin-right: -2px;
+}
+
+.text-price {
+    color: red;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.text-content1>p {
+    width: 500px;
+    font-size: 17px;
+    margin-top: 15px;
+    margin-left: 30px;
+    line-height: 1.8;
+    color: #6f6d6d;
+}
+
+.text-add {
+    margin-left: 30px;
+    margin-top: 25px;
+    display: flex;
+}
+
+.text-add>.quantity>input {
+    background-color: #DCDCDC;
+    border: none;
+    width: 80px;
+    height: 40px;
+    outline: none;
+    margin-top: 2px;
+}
+
+.quantity .tru {
+    position: relative;
+    left: 10px;
+}
+
+.quantity .cong {
+    position: relative;
+    right: 65px;
+}
+
+.quantity .input {
+    position: relative;
+    left: 3px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    appearance: none;
+}
+
+.text-add>button {
+    font-size: 13px;
+    width: 135px;
+    height: 45px;
+    margin-left: -60px;
+}
+
+.text-add>.fa-sharp {
+    background-color: #DCDCDC;
+    padding: 15px;
+    margin-left: 5px;
+}
+
+hr {
+    margin-top: 50px;
+    margin-left: 30px;
+    color: #6f6d6d;
+}
+
+.status {
+    display: flex;
+    margin: 30px;
+    margin-top: 50px;
+    line-height: 2.5;
+}
+
+.status-td {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.status-nd {
+    line-height: 2.8;
+    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+.status-nd>span>i {
+    margin-top: 17px;
+    margin-right: 25px;
+}

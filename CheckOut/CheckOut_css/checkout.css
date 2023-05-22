@@ -1,0 +1,72 @@
+.check-out{
+    max-width: 720px;
+    margin-left: 150px;
+}
+.check{
+    color: #6F6F6F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5F5F5;
+    width: 1200px;
+    height: 40px;
+    border-top: 1px solid #7FAD39;
+}
+
+.check i{
+    margin: 10px;
+    color: #7FAD39;
+}
+
+.check a{
+    color: #6F6F6F;
+}
+
+.check-from-text h2{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
+    width: 1200px;
+    font-size: 28px;
+}
+
+.check-form{
+    display: flex;
+}
+
+.check-form label{
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.check-form input{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: 1px solid lightgray;
+    padding: 10px;
+    outline: none;
+}
+
+.check-form span{
+    color: red;
+}
+
+.check-input{
+
+    margin-top: 10px;
+}
+
+.check-input input{
+    width: 340px;
+}
+
+#Fist-Name,
+#Phone{
+    margin-right: 10px;
+}
+
+input[type = 'number']::-webkit-inner-spin-button{
+    appearance: none;
+}

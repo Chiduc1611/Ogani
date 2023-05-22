@@ -1,0 +1,139 @@
+.featured {
+    display: flex;
+    flex-direction: column;
+}
+
+.featured-product {
+    text-align: center;
+
+}
+
+.featured-product-text {
+    margin-top: 20px;
+}
+
+.featured-product-text h1 {
+    font-size: 25px;
+}
+
+.featured-product-text h1:after {
+    content: "";
+    position: absolute;
+    left: 47%;
+    margin-top: 30px;
+    background-color: #7FAD39;
+    width: 80px;
+    height: 4px;
+}
+
+.featured-product-list ul li {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.featured-product-list ul .so_1 {
+    border-bottom: 2px solid #7FAD39;
+}
+
+.featured-product-list ul li a {
+    font-weight: normal
+}
+
+.featured-product-list ul {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+}
+
+/* danh sach san pham */
+.product-display {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    margin: 30px;
+    margin-left: 11%;
+}
+
+.product {
+    padding: 25px;
+}
+
+.product-img img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 10px;
+}
+
+.product-img img:hover {
+    animation: xoayTron 1s 1 linear backwards;
+}
+
+@keyframes xoayTron {
+    0% {
+        transform: rotateY(0deg);
+    }
+    50%{
+        transform: rotateY(90deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+@keyframes xoay {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+.product-icon ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 45px;
+    height: 0;
+}
+
+.product-icon ul li i {
+    display: none;
+    margin: 10px;
+    padding: 12px;
+    background-color: white;
+    border-radius: 50%;
+    color: black;
+}
+
+.product:hover .product-icon ul li i {
+    display: block;
+
+}
+
+.product-icon ul li i:hover {
+    animation: xoay 0.5s 1 ease;
+}
+
+.product-text {
+    text-align: center;
+}
+
+.product-text p {
+    font-size: 17px
+}
+
+.product-text span {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.product-icon ul li i:hover {
+    transition: all 0.3s;
+    background-color: #7FAD39;
+    color: white;
+}

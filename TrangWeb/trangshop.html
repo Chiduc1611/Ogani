@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Nguyen Chi Duc_TrangShop</title>
+    <link rel="shortcut icon" href="../TrangChu/AnhTC/logo_tong.png" type="image/x-icon">
+    <div class="css">
+      <link rel="stylesheet" href="./CSS/hearder.css" />
+      <link rel="stylesheet" href="./CSS/menu.css" />
+      <link rel="stylesheet" href="./CSS/search.css" />
+      <link rel="stylesheet" href="./CSS/img.css" />
+      <link rel="stylesheet" href="./CSS/content.css" />
+      <link rel="stylesheet" href="./CSS/describe.css" />
+      <link rel="stylesheet" href="./CSS/product.css" />
+      <link rel="stylesheet" href="./CSS/footer.css" />
+      <link rel="stylesheet" href="./CSS/imgshort.css">
+      <link rel="stylesheet" href="../TrangChu/CSS_TC/featured.css">
+    </div>
+  </head>
+  <body>
+    <div class="container">
+      <div class="hearder-top">
+        <div class="hearder-email">
+          <i class="fa fa-envelope"></i>
+          <p>chiduc1611@gmail.com</p>
+        </div>
+        <div class="hearder-text">Free Shipping for all Order of $99</div>
+        <div class="hearder-icon">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+          <i class="fa-brands fa-pinterest-p"></i>
+        </div>
+        <div class="hearder-contry">
+          <img src="./Anh/Contry.png" alt="Contry" />
+          <p>English</p>
+          <ul class="contry">
+            <li><p>English</p></li>
+            <li><p>Viet Nam</p></li>
+          </ul>
+        </div>
+        <div class="hearder-login">
+          <i class="fa fa-user"></i>
+          <p>Login</p>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="menu-logo">
+          <img src="./Anh/logo.png" alt="Logo" />
+        </div>
+        <div class="menu-horizontal">
+          <ul>
+            <li><a href="../TrangChu/trangchu.html">HOME</a></li>
+            <li><a href="../Shop/shop.html">SHOP</a></li>
+            <li class="pages">
+              <a href="#">PAGES</a>
+              <ul class="pages-list">
+                <li><a href="#">Shop Details</a></li>
+                <li><a href="../ShoppingCart/shopingcart.html">Shoping Cart</a></li>
+                <li><a href="../CheckOut/checkout.html">Check Out</a></li>
+                <li><a href="../Blog_del/blog_del.html">Blog Details</a></li>
+              </ul>
+            </li>
+            <li><a href="../Blog/blog.html">BLOG</a></li>
+            <li><a href="../Contact/contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <div class="menu-item">
+          <ul>
+            <li>
+              <a href="#"
+                ><i class="fa fa-heart"></i><span class="number">1</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa fa-shopping-bag"></i
+                ><span class="number">3</span></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="menu-car-item">
+          <p>item:</p>
+          <span class="car-item">150.000$</span>
+        </div>
+      </div>
+      <div class="search-bar">
+        <div class="search-tong" onclick="Checked()">
+          <div class="search-item">
+            <i class="fa fa-bars"></i>
+            <span>All departments</span>
+            <i class="fa-solid fa-chevron-up fa-rotate-180"></i>
+          </div>
+          <form onsubmit=" return kiemTraLoiTimKiem()">
+          <div class="search-list">
+            <ul>
+              <li><a href="#">Fresh Meat</a></li>
+              <li><a href="#">Vegetables</a></li>
+              <li><a href="#">Fruit &amp; Nut Gifts</a></li>
+              <li><a href="#">Fresh Berries</a></li>
+              <li><a href="#">Ocean Foods</a></li>
+              <li><a href="#">Butter &amp; Eggs</a></li>
+              <li><a href="#">Fastfood</a></li>
+              <li><a href="#">Fresh Onion</a></li>
+              <li><a href="#">Papayaya &amp; Crisps</a></li>
+              <li><a href="#">Oatmeal</a></li>
+              <li><a href="#">Fresh Bananas</a></li>
+            </ul>
+          </div>
+        </div>
+        
+          <div class="search">
+            <a href="#">All Categories</a>
+            <i class="fa-solid fa-chevron-up fa-rotate-180"></i>
+            <input id="int-tk" type="text" placeholder="What do you need?" />
+          </div>
+          <button class="btn-01">SEARCH</button>
+        </form>
+        <i class="fa fa-phone"></i>
+        <div class="search-phone">
+          <span>+65 11.188.888</span>
+          <p>support 24/7 time</p>
+        </div>
+      </div>
+      <section
+        class="background-image"
+        style="background-image: url(./Anh/backgrough.jpg); height: 150px"
+      >
+        <div class="text-img">
+          <h2>Vegetable’s Package</h2>
+          <div class="text-option">
+            <a href="../TrangChu/trangchu.html">HOME -</a>
+            <a href="#">Vegetables -</a>
+            <a>Vegetable’s Package</a>
+          </div>
+        </div>
+      </section>
+      <div class="post-content">
+        <div class="img-overview">
+          <div class="post-content-img">
+            <img src="./Anh/conten.jpg" alt="" width="560px" height="540px" />
+          </div>
+        <div class="img-content">
+          <i id="left" class="fa-solid fa-angle-left"></i>
+          <div class="post-content-imagefile">
+            
+            <img
+              src="./Anh/img1.jpg"
+              alt=""
+              onclick="chuyenAnh(this.src)"
+              width="120px"
+              height="120px"
+            />
+            <img
+              src="./Anh/img2.jpg"
+              alt=""
+              onclick="chuyenAnh(this.src)"
+              width="120px"
+              height="120px"
+            />
+            <img
+              src="./Anh/img3.jpg"
+              alt=""
+              onclick="chuyenAnh(this.src)"
+              width="120px"
+              height="120px"
+            />
+            <img
+              src="./Anh/conten.jpg"
+              alt=""
+              onclick="chuyenAnh(this.src)"
+              width="120px"
+              height="120px"
+            />
+
+            <img
+              src="./Anh/sp1.jpg"
+              alt=""
+              onclick="chuyenAnh(this.src)"
+              width="120px"
+              height="120px"
+            />
+            <img
+              src="./Anh/sp2.jpg"
+              alt=""
+              onclick="chuyenAnh(this.src)"
+              width="120px"
+              height="120px"
+            />
+            <img
+              src="./Anh/sp3.jpg"
+              alt=""
+              onclick="chuyenAnh(this.src)"
+              width="120px"
+              height="120px"
+            />
+            <img
+              src="./Anh/img4.jpg"
+              alt=""
+              onclick="chuyenAnh(this.src)"
+              width="120px"
+              height="120px"
+            />
+          </div>
+          <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+        </div>
+        <div class="text-content">
+          <h3>Vetgetable’s Package</h3>
+          <div class="text-evaluate">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <span style="color: red">(18 reviews)</span>
+          </div>
+          <div class="text-price">$50.00</div>
+          <div class="text-content1">
+            <p>
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+              Vestibulum ac diam sit amet quam vehicula elementum sed sit amet
+              dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam
+              vehicula elementum sed sit amet dui. Proin eget tortor risus.
+            </p>
+          </div>
+          <div class="text-add">
+            <div class="quantity">
+              <input
+                type="button"
+                value="-"
+                class="tru"
+                onclick="dieuchinhsoluong('-')"
+              />
+              <input type="number" value="1" class="input" id="so_luong" />
+              <input
+                type="button"
+                value="+"
+                class="cong"
+                onclick="dieuchinhsoluong('+')"
+              />
+            </div>
+            <button class="btn-02">ADD TO CARD</button>
+            <i class="fa-sharp fa-solid fa-heart" onclick="Tim()"></i>
+          </div>
+          <hr />
+          <div class="status">
+            <div class="status-td">
+              <p>Availability</p>
+              <p>Shipping</p>
+              <p>Weight</p>
+              <p>Share on</p>
+            </div>
+            <div class="status-nd">
+              <span>In Stock</span>
+              <span
+                >01 day shipping.
+                <span style="color: red">Free pickup today</span>
+              </span>
+              <span>0.5 kg</span>
+              <span>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-pinterest-p"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="describe">
+        <div class="list-describe">
+          <ul class="list-describe-ul">
+            <li>
+              <p onclick="Text1()" class="Description" style="color: red">
+                Description
+              </p>
+            </li>
+            <li><p onclick="Text2()" class="Information">Information</p></li>
+            <li><p onclick="Text3()" class="Reviews">Reviews (1)</p></li>
+          </ul>
+        </div>
+        <div class="content-describe">
+          <h3>Products Infomation</h3>
+          <p class="hienthitext">
+            Vestibulum ac diam sit amet quam vehicula elementum sed sit amet
+            dui. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor
+            risus. Vivamus suscipit tortor eget felis porttitor volutpat.
+            Vestibulum ac diam sit amet quam vehicula elementum sed sit amet
+            dui. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor
+            eget felis porttitor volutpat. Curabitur arcu erat, accumsan id
+            imperdiet et, porttitor at sem. Praesent sapien massa, convallis a
+            pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam
+            vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in
+            faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit
+            neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
+            Proin eget tortor risus. <br />
+            Praesent sapien massa, convallis a pellentesque nec, egestas non
+            nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras
+            ultricies ligula sed magna dictum porta. Cras ultricies ligula sed
+            magna dictum porta. Sed porttitor lectus nibh. Mauris blandit
+            aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit
+            amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus
+            nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit
+            amet dui. Proin eget tortor risus.
+          </p>
+        </div>
+      </div>
+      <div class="list-product">
+        <div class="name-product">
+          <h1>Related Product</h1>
+        </div>
+        <div class="present-product"></div>
+      </div>
+      <div class="footer">
+        <div class="footer-conview">
+          <div class="footer-content">
+            <div class="footer-left">
+              <img src="./Anh/logo.png" alt="" />
+              <p class="footer-text-1">Address: 60-49 Road 11378 New York</p>
+              <p class="footer-text-1">Phone: +65 11.188.888</p>
+              <p class="footer-text-1">Email: hello@colorlib.com</p>
+            </div>
+            <div class="footer-center">
+              <div class="text-td">
+                <span>Useful Links</span>
+              </div>
+              <div class="text">
+                <div class="text-nd">
+                  <p>About Us</p>
+                  <p>About Our Shop</p>
+                  <p>Secure Shopping</p>
+                  <p>Delivery infomation</p>
+                  <p>Privacy Policy</p>
+                  <p>Our Sitemap</p>
+                </div>
+                <div class="text-nd-1">
+                  <p>Who We Are</p>
+                  <p>Our Services</p>
+                  <p>Projects</p>
+                  <p>Contact</p>
+                  <p>Innovation</p>
+                  <p>Testimonials</p>
+                </div>
+              </div>
+            </div>
+            <div class="footer-right">
+              <span>Join Our Newsletter Now</span>
+              <p>
+                Get E-mail updates about our latest shop and special offers.
+              </p>
+              <form onsubmit="return kiemTraLoiEmail()">
+              <div class="footer-search">
+                <input id="int-email" class="" type="text" placeholder="Enter your mail" />
+                <button class="btn-03"><span>Subscribe</span></button>
+              </div>
+            </form>
+              <div class="footer-icon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-pinterest-p"></i>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="footer-last">
+            <p>
+              Copyright ©2023 All rights reserved | This template is made with
+              <i class="fa fa-heart"></i> by
+              <span style="color: blue">Colorlib</span>
+            </p>
+            <img class="logo2" src="./Anh/logo2.png" alt="" />
+          </div>
+          <div id="btn-reload" style="display: none;">
+            <i class="fa-solid fa-arrow-up"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="JS">
+      <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+      <script src="./JS/listproduct.js"></script>
+      <script src="./JS/imgshort.js"></script>
+      <script src="../TrangChu/JS_TC/cuontrang.js"></script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+.list-product {
+    margin-left: 150px;
+}
+
+.name-product {
+    margin-left: 500px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.name-product h1 {
+    position: relative;
+}
+
+.name-product h1::after {
+    display: block;
+    position: absolute;
+    left: 8%;
+    bottom: -10px;
+    content: "";
+    background-color: #7FAD39;
+    width: 70px;
+    height: 4px;
+
+}
+
+.present-product {
+    display: flex;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}

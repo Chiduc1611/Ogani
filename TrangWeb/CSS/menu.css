@@ -1,0 +1,93 @@
+.menu {
+    display: flex;
+    margin: 10px;
+}
+
+.menu-logo>img {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.menu-item{
+    position: relative;
+    left: -15px;
+}
+.menu-horizontal>ul {
+    display: flex;
+}
+
+.menu-horizontal>ul>li {
+    margin: 17px;
+    margin-left: 50px;
+}
+
+.menu-horizontal>ul>li>a:hover {
+    transition: all 0.3s;
+    color: #7FAD39;
+}
+
+.menu-item>ul {
+    display: flex;
+    margin: 10px;
+    margin-left: 100px;
+}
+
+.menu-item>ul>li {
+    padding: 2px;
+}
+
+.menu-car-item {
+    display: flex;
+    margin: 10px;
+    padding: 2px;
+}
+
+.number {
+    position: relative;
+    bottom: 5px;
+    right: 2px;
+    font-size: 15px;
+    color: white;
+    background-color: #7FAD39;
+    border-radius: 10px;
+}
+
+.car-item {
+    font-weight: bold;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    color: black;
+}
+
+.pages-list {
+    display: none;
+    background-color: #1F1F1F;
+    padding: 5px;
+    width: 130px;
+}
+
+.pages-list li a:hover {
+    display: flex;
+    background-color: white;
+    color: #7FAD39;
+    transition: all 0.3s;
+}
+
+.pages:hover .pages-list {
+    display: block;
+    position: absolute;
+}
+
+.pages-list a {
+    color: white;
+    line-height: 1.8;
+    font-size: 15px;
+}

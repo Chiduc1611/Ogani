@@ -1,0 +1,44 @@
+.check-right .container{
+    background-color: #F5F5F5;
+    width: 365px;
+    margin-left: 40px;
+    padding: 30px;
+}
+
+.check-right .container h3{
+    font-size: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid lightgray;
+}
+
+.name-sp{
+    width: 300px;
+    margin-right: 0px;
+}
+
+.name-sp h4,
+.name-gia h4{
+    font-size: 19px;
+    margin-top: 10px;
+}
+
+.name-sp p,
+.name-gia p{
+    margin-top: 5px;
+}
+
+.tt-tien h3{
+    width: 300px;
+    margin-top: 10px;
+}
+
+.site-btn{
+    width: 100%;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.site-btn:hover{
+    transition: all 0.5s;
+    background-color: #303030;
+}

@@ -1,0 +1,54 @@
+.blog-right {
+    width: 770px;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.blog-right p {
+    color: #6F6F6F;
+    font-size: 18px;
+}
+
+.blog-right h1 {
+    font-size: 25px;
+}
+
+.tt-blog {
+    display: flex;
+    margin-top: 20px;
+}
+
+.tt-blog span {
+    color: #6F6F6F;
+    font-size: 15px;
+}
+
+.tt-blog ul {
+    display: flex;
+}
+
+.tt-blog ul li {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.tt-blog ul li:hover{
+    transition: all 0.5s;
+    color: #6F6F6F;
+}
+
+.tt-blog-admin {
+    width: 400px;
+    display: flex;
+    height: 100px;
+
+}
+
+.tt-blog-admin img {
+    border-radius: 50%;
+}
+
+.tt-blog-admin-name {
+    margin: 10px;
+}

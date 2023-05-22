@@ -1,0 +1,56 @@
+.container {
+    width: 100%;
+}
+
+.banner {
+    background-image: url(../AnhTC/banner.jpg);
+    width: 750px;
+    height: 350px;
+    margin-top: 20px;
+    margin-left: 450px;
+}
+
+.banner-text {
+    line-height: 1.2;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    padding-top: 80px;
+}
+
+.banner-text p {
+    color: black;
+}
+
+.banner-text h1 {
+    font-size: 38px;
+}
+
+.banner-text span {
+    color: rgb(143, 139, 139);
+}
+
+.banner-text button {
+    margin-top: 10px;
+    width: 150px;
+    position: relative;
+    z-index: 1;
+}
+
+.banner-text button::before {
+    content: "";
+    position: absolute;
+    margin-top: -15px;
+    margin-left: -38px;
+    width: 150px;
+    height: 0px;
+    background-color: rgb(70, 66, 81);
+    z-index: -1;
+    transition: height 0.5s ease-out;
+}
+
+.banner-text button:hover::before {
+    height: 47px;
+
+}

@@ -1,0 +1,62 @@
+.describe {
+    margin-left: 160px;
+}
+
+.list-describe {
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    right: 50px;
+}
+
+.list-describe ul {
+    display: flex;
+}
+
+.list-describe>ul>li {
+    padding-right: 50px;
+}
+
+.list-describe>ul>li>p {
+    color: #495057;
+    font-size: large;
+    font-weight: bold
+}
+
+.content-describe {
+    width: 1200px;
+    font-size: 16px;
+}
+
+.content-describe>h3 {
+    font-size: large;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.content-describe>p {
+    line-height: 1.8;
+    color: #495057;
+}
+
+.list-describe-ul::before {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    content: "";
+    background-color: #a7a9ab;
+    height: 2px;
+    width: 400px;
+}
+
+.list-describe-ul::after {
+    position: absolute;
+    top: 10px;
+    left: 850px;
+    content: "";
+    background-color: #a7a9ab;
+    height: 2px;
+    width: 400px;
+}

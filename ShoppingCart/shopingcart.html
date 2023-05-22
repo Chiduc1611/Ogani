@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>NguyenChiDuc_shopingcart</title>
+    <link rel="shortcut icon" href="../TrangChu/AnhTC/logo_tong.png" type="image/x-icon">
+    <div class="css">
+        <link rel="stylesheet" href="../TrangWeb/CSS/hearder.css">
+        <link rel="stylesheet" href="../TrangWeb/CSS/menu.css">
+        <link rel="stylesheet" href="../TrangWeb/CSS/search.css">
+        <link rel="stylesheet" href="../TrangWeb/CSS/img.css">
+        <link rel="stylesheet" href="./shopingcart_css/shop.css">
+        <link rel="stylesheet" href="../TrangWeb/CSS/footer.css">
+        <link rel="stylesheet" href="./shopingcart_css/pay.css">
+    </div>
+</head>
+<body>
+    <!--phan dau-->
+    <div class="container">
+        <div class="hearder-top">
+          <div class="hearder-email">
+            <i class="fa fa-envelope"></i>
+            <p>chiduc1611@gmail.com</p>
+          </div>
+          <div class="hearder-text">Free Shipping for all Order of $99</div>
+          <div class="hearder-icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-pinterest-p"></i>
+          </div>
+          <div class="hearder-contry">
+            <img src="../TrangWeb/Anh/Contry.png" alt="Contry" />
+            <p>English</p>
+            <ul class="contry">
+              <li><p>English</p></li>
+              <li><p>Viet Nam</p></li>
+            </ul>
+          </div>
+          <div class="hearder-login">
+            <i class="fa fa-user"></i>
+            <p>Login</p>
+          </div>
+        </div>
+        <div class="menu">
+          <div class="menu-logo">
+            <img src="../TrangWeb/Anh/logo.png" alt="Logo" />
+          </div>
+          <div class="menu-horizontal">
+            <ul>
+              <li><a href="../TrangChu/trangchu.html">HOME</a></li>
+              <li><a href="../Shop/shop.html">SHOP</a></li>
+              <li class="pages">
+                <a href="#">PAGES</a>
+                <ul class="pages-list">
+                  <li><a href="../TrangWeb/trangshop.html">Shop Details</a></li>
+                  <li><a href="#">Shoping Cart</a></li>
+                  <li><a href="../CheckOut/checkout.html">Check Out</a></li>
+                  <li><a href="../Blog_del/blog_del.html">Blog Details</a></li>
+                </ul>
+              </li>
+              <li><a href="../Blog/blog.html">BLOG</a></li>
+              <li><a href="../Contact/contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+          <div class="menu-item">
+            <ul>
+              <li>
+                <a href="#"
+                  ><i class="fa fa-heart"></i><span class="number">1</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa fa-shopping-bag"></i
+                  ><span class="number">3</span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="menu-car-item">
+            <p>item:</p>
+            <span class="car-item">150.000$</span>
+          </div>
+        </div>
+        <div class="search-bar">
+          <div class="search-tong" onclick="Checked()">
+            <div class="search-item">
+              <i class="fa fa-bars"></i>
+              <span>All departments</span>
+              <i class="fa-solid fa-chevron-up fa-rotate-180"></i>
+            </div>
+            <form onsubmit=" return kiemTraLoiTimKiem()">
+            <div class="search-list">
+              <ul>
+                <li><a href="#">Fresh Meat</a></li>
+                <li><a href="#">Vegetables</a></li>
+                <li><a href="#">Fruit &amp; Nut Gifts</a></li>
+                <li><a href="#">Fresh Berries</a></li>
+                <li><a href="#">Ocean Foods</a></li>
+                <li><a href="#">Butter &amp; Eggs</a></li>
+                <li><a href="#">Fastfood</a></li>
+                <li><a href="#">Fresh Onion</a></li>
+                <li><a href="#">Papayaya &amp; Crisps</a></li>
+                <li><a href="#">Oatmeal</a></li>
+                <li><a href="#">Fresh Bananas</a></li>
+              </ul>
+            </div>
+          </div> 
+            <div class="search">
+              <a href="#">All Categories</a>
+              <i class="fa-solid fa-chevron-up fa-rotate-180"></i>
+              <input id="int-tk" type="text" placeholder="What do you need?" />
+            </div>
+            <button class="btn-01">SEARCH</button>
+          </form>
+          <i class="fa fa-phone"></i>
+          <div class="search-phone">
+            <span>+65 11.188.888</span>
+            <p>support 24/7 time</p>
+          </div>
+        </div>
+      <!--phan banner-->
+      <section
+    class="background-image"
+    style="background-image: url(../TrangWeb/Anh/backgrough.jpg); height: 150px"
+  >
+    <div class="text-img">
+      <h2>Shopping Cart</h2>
+      <div class="text-option">
+        <a href="../TrangChu/trangchu.html">HOME -</a>
+        <a href="#">Shopping Cart</a>
+    </div>
+  </section>
+  <!--phan mua hang-->
+    <section class="product-price">
+      <!--bang gia-->
+        <div class="product-price-list">
+          <div class="product-price-list-text">
+            <h3 class="products">Products</h3>  
+            <h3>Price</h3>
+            <h3>Quantity</h3>
+            <h3>Total</h3>
+          </div>
+          <div class="hien_thi_ds">
+        </div>
+        <div class="product-price-list-shopping">
+          <a href="#" class="primary-btn cart-btn">CONTINUE SHOPPING</a>
+          <a href="#" class="primary-btn cart-btN cart-btn-right">
+            <i class="fa-thin fa-loader"></i>
+            UPADATE CART
+          </a>
+        </div>
+      </div>
+      <!--phan thanh toan -->
+      <div class="product-price-list-pay">
+        <div class="product-price-list-pay-left">
+          <h2>Discount Codes</h2>
+          <div class="apply-coupon">
+            <input type="text" placeholder="Enter your coupon code">
+            <button class="btn-apply">APPLY COUPON</button>
+          </div>
+        </div>
+        <div class="product-price-list-pay-right">
+          <div class="pay-right">
+            <div class="text-01">
+              <h3>Cart Total</h3>
+            </div>
+            <div class="text-02">
+              <h3>Subtotal</h3><span>$454.98</span>
+            </div>
+            <div class="text-02">
+              <h3>Total</h3><span>$454.98</span>
+            </div>
+              <button class="btn-pay-right">PROCEED TO CHECKOUT</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!--phan cuoi-->
+  <section class="footer">
+    <div class="footer-conview">
+      <div class="footer-content">
+        <div class="footer-left">
+          <img src="../TrangChu/AnhTC/logo.png" alt="" />
+          <p class="footer-text-1">Address: 60-49 Road 11378 New York</p>
+          <p class="footer-text-1">Phone: +65 11.188.888</p>
+          <p class="footer-text-1">Email: hello@colorlib.com</p>
+        </div>
+        <div class="footer-center">
+          <div class="text-td">
+            <span>Useful Links</span>
+          </div>
+          <div class="text">
+            <div class="text-nd">
+              <p>About Us</p>
+              <p>About Our Shop</p>
+              <p>Secure Shopping</p>
+              <p>Delivery infomation</p>
+              <p>Privacy Policy</p>
+              <p>Our Sitemap</p>
+            </div>
+            <div class="text-nd-1">
+              <p>Who We Are</p>
+              <p>Our Services</p>
+              <p>Projects</p>
+              <p>Contact</p>
+              <p>Innovation</p>
+              <p>Testimonials</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-right">
+          <span>Join Our Newsletter Now</span>
+          <p>
+            Get E-mail updates about our latest shop and special offers.
+          </p>
+          <form onsubmit="return kiemTraLoiEmail()">
+          <div class="footer-search">
+            <input id="int-email" class="" type="text" placeholder="Enter your mail" />
+            <button class="btn-03"><span>Subscribe</span></button>
+          </div>
+        </form>
+          <div class="footer-icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-pinterest-p"></i>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="footer-last">
+        <p>
+          Copyright ©2023 All rights reserved | This template is made with
+          <i class="fa fa-heart"></i> by
+          <span style="color: blue">Colorlib</span>
+        </p>
+        <img class="logo2" src="../TrangChu/AnhTC/logo2.png" alt="" />
+      </div>
+      <div id="btn-reload" style="display: none;">
+        <i class="fa-solid fa-arrow-up"></i>
+      </div>
+    </div>
+  </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>crossorigin="anonymous"></script>
+    <script src="../TrangChu/JS_TC/trangchu.js"></script>
+    <script src="./shopingcart_js/shop.js"></script>
+    <script src="../TrangChu/JS_TC/cuontrang.js"></script>
+</body>
+</html>

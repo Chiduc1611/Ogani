@@ -1,0 +1,7 @@
+.banner-sanpham{
+    margin-left: 160px;
+    display: flex;
+}
+.banner-sanpham img{
+    margin: 20px;
+}
